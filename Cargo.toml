@@ -1,10 +1,10 @@
 [package]
-name = "compiler-rt"
 description = "The LLVM compiler-rt builtins source, conveniently packaged as a Rust crate."
-version = "0.0.0"
 edition = "2018"
-repository = "https://github.com/trevyn/compiler-rt"
 license = "Apache-2.0 WITH LLVM-exception"
+name = "compiler-rt"
+repository = "https://github.com/trevyn/compiler-rt"
+version = "0.1.0"
 
 [build-dependencies]
 cc = "1"
