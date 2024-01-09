@@ -25,6 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Homebrew llvm on macOS
+        if: matrix.os == 'macos-latest'
+        run: brew install llvm
+
       - run: rustup default ${{ matrix.rust }}
       - run: rustup update ${{ matrix.rust }}
       - run: rustup target add wasm32-unknown-unknown
