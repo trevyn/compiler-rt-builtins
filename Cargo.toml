@@ -1,0 +1,9 @@
+[package]
+name = "compiler-rt"
+version = "0.0.0"
+edition = "2018"
+repository = "https://github.com/trevyn/compiler-rt"
+license = "Apache-2.0 WITH LLVM-exception"
+
+[build-dependencies]
+cc = "1"
