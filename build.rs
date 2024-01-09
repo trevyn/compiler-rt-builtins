@@ -62,5 +62,5 @@ fn main() {
     cc::Build::new()
         .files(sources)
         .flag("-Wno-unused-parameter")
-        .compile("compiler-rt");
+        .compile("compiler-rt-builtins");
 }
