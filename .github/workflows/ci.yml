@@ -31,7 +31,7 @@ jobs:
       - run: curl -L -o code.tar.gz https://github.com/rust-lang/llvm-project/archive/rustc/17.0-2023-12-14.tar.gz
       - run: tar xzf code.tar.gz --strip-components 3 llvm-project-rustc-17.0-2023-12-14/compiler-rt/lib/builtins
       - run: rm code.tar.gz
-      - run: find builtins -mindepth 1 -maxdepth 1 -type d -exec rm -rf {}
+      - run: find builtins -mindepth 1 -maxdepth 1 -type d -exec rm -rf {} +
       - run: ls -la
       - run: ls -la builtins
       - run: cargo build --target wasm32-unknown-unknown
