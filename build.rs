@@ -37,7 +37,7 @@ fn main() {
     let sources = generic_sources
         .iter()
         .chain(generic_tf_sources.iter())
-        .map(|f| format!("builtins/{f}"))
+        .map(|f| format!("builtins/{}", f))
         .collect::<Vec<_>>();
 
     if env::var("TARGET").map_or(false, |t| t.starts_with("wasm")) {
