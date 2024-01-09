@@ -1,5 +1,6 @@
 [package]
 name = "compiler-rt"
+description = "The LLVM compiler-rt builtins source, conveniently packaged as a Rust crate."
 version = "0.0.0"
 edition = "2018"
 repository = "https://github.com/trevyn/compiler-rt"
