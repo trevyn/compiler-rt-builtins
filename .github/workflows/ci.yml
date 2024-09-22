@@ -37,7 +37,7 @@ jobs:
       - run: rm code.tar.gz
       - run: find builtins -mindepth 1 -maxdepth 1 -type d -exec rm -rf {} +
       - run: cargo build --target wasm32-unknown-unknown
-      - run: cargo publish --allow-dirty --dry-run
+      - run: cargo package --allow-dirty
 
   publish:
     needs: [test]
